@@ -9,6 +9,7 @@ body {
     height: 35px;
 }
 
+/* Home Section */
 .home {
     width: 100%;
     height: 100vh;
@@ -92,6 +93,8 @@ body {
 
 .home main {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -140,4 +143,122 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+}
+
+.home main .right img {
+    width: 500px;
+    height: 374px;
+}
+
+.home main .bottom {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #665959;
+    margin-top: 80px;
+}
+
+.home main .bottom span {
+    color: #000;
+    font-weight: 600;
+}
+
+.home main .bottom .some-logo {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home main .bottom .some-logo div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+/* About Us Section */
+.about-us {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 100px;
+    background-color: #FFFCF1;
+}
+
+.about-us h1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.about-us main {
+    display: flex;
+}
+
+.about-us main .left {
+    margin-top: 20px;
+
+}
+
+.about-us main .left h1 {
+    width: 543px;
+    height: 165px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: #000;
+    margin-bottom: 45px;
+}
+
+.about-us main .left img {
+    width: 490px;
+    height: 285px;
+    border-radius: 15px;
+}
+
+.about-us main .right {
+    margin-left: 200px;
+}
+
+.about-us main .right .desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    margin-top: 170px;
+    width: 569px;
+    margin-bottom: 30px;
+}
+
+.about-us main .right .list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.about-us main .right .tabel {
+    display: flex;
+    width: 656px;
+    height: 146px;
+    border-radius: 15px;
+    background-color: #D6FA51;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us main .right .tabel .each {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
