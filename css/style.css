@@ -199,11 +199,11 @@ body {
 
 .about-us main {
     display: flex;
+    justify-content: space-between;
 }
 
 .about-us main .left {
     margin-top: 20px;
-
 }
 
 .about-us main .left h1 {
@@ -248,6 +248,8 @@ body {
 }
 
 .about-us main .right .tabel {
+    position: relative;
+    right: 300px;
     display: flex;
     width: 656px;
     height: 146px;
@@ -255,10 +257,255 @@ body {
     background-color: #D6FA51;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
 }
 
 .about-us main .right .tabel .each {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about-us main .right .tabel .each h1 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.about-us main .right .tabel .each span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 55px;
+    color: #000;
+}
+
+.about-us main .right .tabel .line {
+    width: 60px;
+    height: 0;
+    border: 1px solid #000;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+
+/* Services Section */
+.services {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 100px;
+    box-sizing: border-box;
+}
+
+.services h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 55px;
+    color: #000;
+}
+
+.services main {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.services main .cards {
+    padding: 25px 30px 35px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .25);
+}
+
+.services main .cards h1 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.services main .cards p {
+    max-width: 266px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.services main .cards button {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    padding: 0 0 10px;
+    border: none;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+/* Pricing Section */
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 100px 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFCF1;
+}
+
+.pricing header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing header span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.pricing header h1 {
+    width: 525px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.pricing main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.pricing main .cards {
+    padding: 40px 35px 30px;
+    background-color: #fff;
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, .25);
+    border-radius: 15px;
+}
+
+.pricing main .cards h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+    color: #000;
+}
+
+.pricing main .cards .price {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.pricing main .cards .price span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.pricing main .cards .list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.pricing main .cards .list p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+.pricing main .cards .disc {
+    margin: 20px auto 35px;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #E1E1E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing main .cards .disc h1 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+}
+
+.pricing main .cards button {
+    width: 100%;
+    height: 35px;
+    background-color: #747474;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Testimonial Section */
+.testimonial {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.testimonial header h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.testimonial header h1 {
+    width: 356px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000;
+}
+
+.testimonial main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.testimonial main .cards {
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, .25);
+    padding: 10px 60px 30px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.testimonial main .cards .logo {
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial main .cards p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
 }
